@@ -33,9 +33,11 @@ function exibirAmigos() {
 
     // Adiciona cada nome como um elemento <li> dentro da lista
     listaDeAmigos.forEach((amigo) => {
-        listaHTML.innerHTML += `<li>${amigo}</li>`;
+        const li = document.createElement('li');
+        li.textContent = amigo;
+        listaHTML.appendChild(li);
     });
-
+}
     // Opcional: Apenas para fins de depuração
     console.log('Lista de amigos exibida na página:', listaDeAmigos);
 }
