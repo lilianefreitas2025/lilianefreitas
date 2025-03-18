@@ -14,11 +14,14 @@
     <main class="main-content">
         <header class="header-banner">
             <h1 class="main-title">Amigo Secreto</h1>
+                <input type="text" id="nomeAmigo" placeholder="Digite o nome do amigo">
+                <button onclick="adicionarAmigo()">Adicionar Amigo</button>
             <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto">
         </header>
         
         <section class="input-section">
             <h2 class="section-title">Digite o nome dos seus amigos</h2>
+                <ul id="listaDeAmigos"></ul>
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
