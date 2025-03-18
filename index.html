@@ -15,7 +15,7 @@
         <header class="header-banner">
             <h1 class="main-title">Amigo Secreto</h1>
                 <input type="text" id="nomeAmigo" placeholder="Digite o nome do amigo">
-                <button onclick="adicionarAmigo()">Adicionar Amigo</button>
+                <button onclick="adicionarAmigo(); exibirAmigos();">Adicionar Amigo</button>
             <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto">
         </header>
         
@@ -25,6 +25,12 @@
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
+            </div>
+
+            <div class="input-wrapper">
+                <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
+                <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
+                <button onclick="adicionarAmigo(); exibirAmigos();">Adicionar Amigo</button>
             </div>
            
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
@@ -36,6 +42,7 @@
                     Sortear amigo
                 </button>
             </div>
+            <div id="resultadoAmigo" class="resultado"></div>
         </section>
     </main>
 
